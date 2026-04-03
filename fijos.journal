@@ -1,28 +1,40 @@
 D 1.000,00 ARS
 
 ; ---INGRESOS---
-~ monthly from 2026-03-01
+~ monthly from 2026-04-01
 	activos:banco:ca19  2000000
 	ingresos:clientes:itiers  -2000000
 
 ;  ---GASTOS FIJOS---
 ;  ---Alquiler---
-~ monthly from 2026-03-1
-	gastos:fijos:alquiler  983016
-	activos:mp  -983016
+~ monthly from 2026-04-10
+	(gastos:fijos:alquiler)  983016
+	(activos:mp)  -983016
 ;  ---Servicios---
-~ monthly from 2026-03-1  ; Luz
-	gastos:fijos:servicios:Luz  1000
-	activos:mp  -1000
-~ monthly from 2026-03-1  ; Gas
-	gastos:fijos:servicios:Gas  1000
-	activos:mp  -1000
-~ monthly from 2026-03-1  ; Agua
-	gastos:fijos:servicios:Agua  1000
-	activos:mp  -1000
-~ monthly from 2026-03-1  ; Internet
-	gastos:fijos:servicios:Internet  1000
-	activos:mp  -1000
-~ monthly from 2026-03-1  ; Celular
-	gastos:fijos:servicios:Celular  1000
-	activos:mp  -1000
+~ monthly from 2026-04-25  ; Luz
+	(gastos:fijos:servicios:Luz)  48000
+	(activos:mp)  -48000
+~ monthly from 2026-04-10  ; Gas
+	(gastos:fijos:servicios:Gas)  8000
+	(activos:mp)  -8000
+~ monthly from 2026-04-25  ; Agua
+	(gastos:fijos:servicios:Agua)  23000
+	(activos:mp)  -23000
+~ monthly from 2026-04-12  ; Internet
+	(gastos:fijos:servicios:Internet)  38000
+	(activos:mp)  -38000
+~ monthly from 2026-04-01  ; Celular
+	(gastos:fijos:servicios:Celular)  37000
+	(activos:mp)  -37000
+;  ---Seguros---
+~ monthly from 2026-04-10  ; Automotor
+	(gastos:fijos:seguros:Automotor)  54000
+	(activos:banco:ca19)  -54000
+	gastos:fijos:seguros:Hogar  22000
+	activos:banco:ca19  -22000
+;  ---Impuestos---
+~ monthly from 2026-04-10  ; Municipal
+	(gastos:fijos:impuestos:Municipal)  10000
+	(activos:mp)  -10000
+
+

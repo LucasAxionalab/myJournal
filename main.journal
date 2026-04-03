@@ -11,17 +11,24 @@ D 1.000,00 ARS
     patrimonio:neto:apertura            0
     activos:banco:caUSD53         USD  0,24
     patrimonio:neto:apertura      USD  -0,24
-    activos:mp			  80989,76      
+    activos:mp:wallet			  80989,76      
     patrimonio:neto:apertura	  -80989,76
+    pasivos:mp:loans:P1              1017787,65 ; Préstamo pesonal
+    patrimonio:neto:apertura     -1017787,65
+    pasivos:mp:loans:P2              297749,70 ; Préstamo cuota Vinculat
+    patrimonio:neto:apertura     -297749,70
+    pasivos:personas:jimena          1200000 ; Préstamo de Jimena
+    patrimonio:neto:apertura     -1200000
+    
 
 2026-04-02 movimientos del dia
-    activos:banco:ca19          -178736,85
     pasivos:tarjetas:visa      178736,85
-    activos:banco:ca19           -23557,64
+    activos:banco:ca19          -178736,85
     pasivos:tarjetas:visa       23557,64
-    gastos:comidas		14000
-    activos:mp			-14000
-    gastos:comidas		12100  ; 24 Fit training comida saludable
-    activos:mp			-12100
-    gastos:ocio			20000  ; Salida al museo TRex
-    activos:mp			-20000
+    activos:banco:ca19           -23557,64
+    gastos:comidas		       14000
+    activos:mp			         -14000
+    gastos:comidas		       12100  ; 24 Fit training comida saludable
+    activos:mp			         -12100
+    gastos:ocio			       20000  ; Salida al museo TRex
+    activos:mp			         -20000
