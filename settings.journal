@@ -1,0 +1,9 @@
+account  ingresos  ;  type:R
+account  gastos  ;  type:X
+account  patrimonio:neto  ;  type:E
+account  activos  ;  type:A
+account  pasivos  ;  type:L
+account  activos:banco  ;  type:C
+account activos:mp  ;  type:C
+
+commodity  1.000,00 ARS

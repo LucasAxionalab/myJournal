@@ -1,0 +1,11 @@
+D 1.000,00 ARS
+
+; ---INGRESOS---
+~ monthly from 2026-03-01
+	activos:banco:ca19  2000000
+	ingresos:clientes:itiers  -2000000
+
+;  ---GASTOS FIJOS---
+~ monthly from 2026-03-1
+	gastos:fijos:alquiler  983016
+	activos:banco:cc19  -983016
