@@ -1,0 +1,33 @@
+include precios.journal
+
+account  ingresos  ;  type:R
+account  gastos  ;  type:X
+account  patrimonio:neto  ;  type:E
+account  activos  ;  type:A
+account  pasivos  ;  type:L
+account  activos:banco  ;  type:C
+account activos:mp  ;  type:C
+
+D   ARS 1.000,00
+
+2026-04-02 Saldo apertura
+    activos:banco:ca19 	 2000000
+    patrimonio:neto:apertura     
+    activos:banco:ca58                  0
+    patrimonio:neto:apertura            0
+    activos:banco:caUSD53         USD  0,24
+    patrimonio:neto:apertura      USD  -0,24
+    activos:mp			  80989,76      
+    patrimonio:neto:apertura	  -80989,76
+
+2026-04-02 movimientos del dia
+    activos:banco:ca19          -178736,85
+    pasivos:tarjetas:visa      178736,85
+    activos:banco:ca19           -23557,64
+    pasivos:tarjetas:visa       23557,64
+    gastos:comidas		14000
+    activos:mp			-14000
+    gastos:comidas		12100  ; 24 Fit training comida saludable
+    activos:mp			-12100
+    gastos:ocio			20000  ; Salida al museo TRex
+    activos:mp			-20000
