@@ -2,39 +2,59 @@ D 1.000,00 ARS
 
 ; ---INGRESOS---
 ~ monthly from 2026-04-01
-	activos:banco:ca19  2000000
-	ingresos:clientes:itiers  -2000000
+	activos:empresa:axiona	  2000000
+	ingresos:clientes:itiers    -2000000
+	activos:banco:ca19	  2000000
+	activos:empresa:axiona	   -2000000
+;  ---Para aprovechar los intereses de mp-wallet---
+~ monthly from 2026-04-01
+       activos:mp:wallet      1900000
+       activos:banco:ca19       -1900000
 
 ;  ---GASTOS FIJOS---
+
 ;  ---Alquiler---
 ~ monthly from 2026-04-10
 	(gastos:fijos:alquiler)  983016
-	(activos:mp)  -983016
+	(activos:mp:wallet)  	  -983016  ; Sale de wallet porque pongo el dinero allí para que me generes algo de intereses.
 ;  ---Servicios---
 ~ monthly from 2026-04-25  ; Luz
 	(gastos:fijos:servicios:Luz)  48000
-	(activos:mp)  -48000
+	(activos:mp:wallet)  -48000
 ~ monthly from 2026-04-10  ; Gas
 	(gastos:fijos:servicios:Gas)  8000
-	(activos:mp)  -8000
+	(activos:mp:wallet)  -8000
 ~ monthly from 2026-04-25  ; Agua
 	(gastos:fijos:servicios:Agua)  23000
-	(activos:mp)  -23000
+	(activos:mp:wallet)  -23000
 ~ monthly from 2026-04-12  ; Internet
 	(gastos:fijos:servicios:Internet)  38000
-	(activos:mp)  -38000
+	(activos:mp:wallet)  -38000
 ~ monthly from 2026-04-01  ; Celular
 	(gastos:fijos:servicios:Celular)  37000
-	(activos:mp)  -37000
+	(activos:mp:wallet)  -37000
 ;  ---Seguros---
 ~ monthly from 2026-04-10  ; Automotor
 	(gastos:fijos:seguros:Automotor)  54000
 	(activos:banco:ca19)  -54000
 	gastos:fijos:seguros:Hogar  22000
-	activos:banco:ca19  -22000
+	activos:banco:ca19  	     -22000
 ;  ---Impuestos---
 ~ monthly from 2026-04-10  ; Municipal
 	(gastos:fijos:impuestos:Municipal)  10000
-	(activos:mp)  -10000
-
+	(activos:mp:wallet)  -10000
+;  ---fijos imputables a AxionaLab---
+~ monthly from 2026-04-10  ; Odoo
+	(gastos:empresa:axiona:fijos)  19652,00
+	(pasivos:tarjeta:visa)	       -19652,00
+~ monthly from 2026-04-10  ; Google workspace
+	(gastos:empresa:axiona:fijos)  47712,00
+	(pasivos:tarjeta:master)        -47712,00
+~ monthly from 2026-04-10  ; Github
+	(gastos:empresa:axiona:fijos)  12822,60
+	(pasivos:tarjeta:master)        -12822,60
+;  ---fijos varios musica, almacenamiento en la nube---
+~ monthly from 2026-04-10  ; musica, almacenamiento nube
+	(gastos:fijos:utilidades)  8000,00
+	(pasivos:tarjeta:visa)	     -8000,00
 

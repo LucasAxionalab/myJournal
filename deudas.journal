@@ -1,0 +1,21 @@
+D 1.000,00 ARS
+
+;  ---Master---
+~ monthly from 2026-05-15 to 2026-05-15  ; Consumos varios entra en mayo
+	(gastos:variables:varios)  122288,63
+	(activos:bancos:ca19)  	    -122288,63
+;  ---Jimena---
+~ monthly from 2026-04-30 to 2027-02-27 ; Prestamo de Jimena
+	(gastos:variables:prestamo)   150000,00
+	(activos:banco:ca19)           -150000,00
+;  ---MP---
+~ monthly from 2026-04-10 to 2026-08-10  ; Prestamo personal
+	(gastos:variables:prestamo)  203557,53
+	(activos:mp:wallet)  	       -203557,53
+~ monthly from 2026-04-10 to 2027-03-10  ; Prestamo cuota Vinculat
+        (gastos:variables:prestamo)   33083,30
+        (activos:mp:wallet)   	        -33083,30
+~ monthly from 2026-04-10 to 2027-03-10  ; Gastos estimados de super, almacén y otros
+        (gastos:variables:super)   300000,00
+        (activos:mp:wallet)          -300000,00
+
