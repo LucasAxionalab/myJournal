@@ -1,22 +1,52 @@
 D 1.000,00 ARS
 
 ; ---INGRESOS---
-~ monthly from 2026-04-01
+~ monthly from 2026-04-01 to 2026-05-01
 	activos:empresa:axiona	  2000000
 	ingresos:clientes:itiers    -2000000
 	activos:banco:ca19	  2000000
 	activos:empresa:axiona	   -2000000
+~ monthly from 2026-05-01 to 2026-08-01
+	activos:empresa:axiona	  2154000
+	ingresos:clientes:itiers    -2154000
+	activos:banco:ca19	  2154000
+	activos:empresa:axiona	   -2154000
+~ monthly from 2026-08-01 to 2026-11-01
+	activos:empresa:axiona	  2272470
+	ingresos:clientes:itiers    -2272470
+	activos:banco:ca19	  2272470
+	activos:empresa:axiona	   -2272470
+~ monthly from 2026-11-01 to 2027-02-01
+	activos:empresa:axiona	  2377000
+	ingresos:clientes:itiers    -2377000
+	activos:banco:ca19	  2377000
+	activos:empresa:axiona	   -2377000
+
 ;  ---Para aprovechar los intereses de mp-wallet---
-~ monthly from 2026-04-01
+~ monthly from 2026-04-01 to 2026-05-01
        activos:mp:wallet      1900000
        activos:banco:ca19       -1900000
-
+~ monthly from 2026-05-01 to 2026-08-01
+       activos:mp:wallet      2050000
+       activos:banco:ca19       -2050000
+~ monthly from 2026-08-01 to 2026-11-01
+       activos:mp:wallet      2170000
+       activos:banco:ca19       -2170000
+~ monthly from 2026-11-01 to 2027-02-01
+       activos:mp:wallet      2270000
+       activos:banco:ca19       -2270000
 ;  ---GASTOS FIJOS---
 
-;  ---Alquiler---
-~ monthly from 2026-04-10
+;  ---Alquiler aum  prom cuatrim 10pto2 %---
+~ monthly from 2026-04-10 to 2026-05-10
 	(gastos:fijos:alquiler)  983016
 	(activos:mp:wallet)  	  -983016  ; Sale de wallet porque pongo el dinero allí para que me generes algo de intereses.
+~ monthly from 2026-05-10 to 2026-09-10
+	(gastos:fijos:alquiler)  1105900
+	(activos:mp:wallet)  	  -1105900  ; Sale de wallet porque pongo el dinero allí para que me generes algo de intereses.
+~ monthly from 2026-09-10 to 2027-01-10
+	(gastos:fijos:alquiler)  1218900
+	(activos:mp:wallet)  	  -1218900  ; Sale de wallet porque pongo el dinero allí para que me generes algo de intereses.
 ;  ---Servicios---
 ~ monthly from 2026-04-25  ; Luz
 	(gastos:fijos:servicios:Luz)  48000
