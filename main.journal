@@ -6,8 +6,6 @@ include deudas.journal
 D 1.000,00 ARS
 
 2026-04-02 Saldo apertura
-    activos:banco:ca19 	 	  2000000
-    patrimonio:neto:apertura     
     activos:banco:ca58                  0
     patrimonio:neto:apertura            0
     activos:banco:caUSD53          USD 0,24
@@ -29,6 +27,12 @@ D 1.000,00 ARS
     
 
 2026-04-02 movimientos del dia    
+    activos:empresa:axiona 	2000000
+    ingresos:clientes:itiers	  -2000000     
+    activos:banco:ca19		2000000
+    activos:empresa:axiona	  -2000000
+    activos:mp:wallet		1430705,51
+    activos:banco:ca19		  -1430705,51
     pasivos:tarjetas:visa       178736,85
     activos:banco:ca19            -178736,85
     pasivos:tarjetas:visa       23557,64
