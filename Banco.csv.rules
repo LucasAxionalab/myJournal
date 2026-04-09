@@ -1,0 +1,43 @@
+skip 1
+
+fields date, description, amount-out, amount-in, _
+
+date-format %m/%d/%y
+
+account1 activos:banco:ca19
+
+if 
+TRANSF.HABERES
+TRANS PAG PROV
+TRANSF. E/BCOS-ONLINE
+TRANSFERENCIA PUSH
+CREDITO INMEDIATO
+   account2 activos:empresa:axiona
+
+if VISA
+    account2 pasivos:tarjetas:visa
+    
+;if TRANS PAG PROV
+;    account2 activos:empresa:axiona
+
+if PAGO MASTERCARD
+   account2 pasivos:tarjetas:master
+
+if DEBIN
+    account2 gastos:a_revisar
+
+if DEBIN  30703088534
+   account2 activos:mp:wallet
+
+;if TRANSF. E/BCOS-ONLINE
+;   account2 activos:empresa:axiona
+
+if SEG. HOGAR
+   account2 gastos:fijos:seguros:Hogar
+
+if SAN CRISTO
+   account2 gastos:fijos:seguros:Automotor
+
+;if SAN CRISTO
+;   account2 gastos:fijos:seguros:hogar
+

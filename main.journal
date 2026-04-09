@@ -45,3 +45,53 @@ D 1.000,00 ARS
     activos:mp:wallet		  -20000
     pasivos:prestamo:jimena     150000
     activos:banco:ca19            -150000
+
+2026-04-04 Compra en Carrefour - Suc, 6029
+    activos:mp:wallet             -7083,45
+    gastos:variables:super         7083,45
+
+2026-04-04 ARCA
+    activos:mp:wallet         -16956,46
+    gastos:axiona:fijos        16956,46
+
+2026-04-04 Pago Debin
+    activos:mp:wallet      1430730,00
+    activos:banco:ca19    -1430730,00
+
+2026-04-04 Cooperativa Eléctrica de Godoy Cruz
+    activos:mp:wallet                -47300,00
+    gastos:fijos:servicios:luz        47300,00
+
+2026-04-04 Producto de Minimarket Los Hermanos
+    activos:mp:wallet        -1800,00
+    expenses:unknown          1800,00
+
+2026-04-06
+    activos:mp:wallet          291,20
+    ingresos:varios           -291,20
+
+2026-04-06 Compra en Carrefour - Suc, 6029
+    activos:mp:wallet             -4759,00
+    gastos:variables:super         4759,00
+
+2026-04-07
+    activos:mp:wallet          770,57
+    ingresos:varios           -770,57
+
+2026-04-07 Producto de Pimiento Colorado
+    activos:mp:wallet        -5300,00
+    expenses:unknown          5300,00
+
+2026-04-07 Varios
+    activos:mp:wallet         -800,00
+    expenses:unknown           800,00
+
+2026-04-07 INMUEBLE
+    activos:mp:wallet                   -9845,82
+    gastos:fijos:impuestos:hogar         9845,82
+
+2026-04-04 Aguas Mendocinas
+    activos:mp:wallet                  23069,81
+    gastos:fijos:servicios:agua       -23069,81
+    activos:mp:wallet                      4300
+    gastos:variables:comida               -4300
