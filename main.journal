@@ -79,7 +79,15 @@ D 1.000,00 ARS
     gastos:fijos:impuestos:hogar         9845,82
 
 2026-04-04 Aguas Mendocinas
-    activos:mp:wallet                  23069,81
-    gastos:fijos:servicios:agua       -23069,81
-    activos:mp:wallet                      4300
-    gastos:variables:comida               -4300
+    activos:mp:wallet                    -23069,81
+    gastos:fijos:servicios:agua        23069,81
+    activos:mp:wallet                    -4300
+    gastos:variables:comidas           4300
+
+2026-04-06 Alimentos
+    gastos:variables:comidas         9313,86
+    activos:mp:wallet               -9313,86
+
+2026-04-07 Alimentos
+    gastos:variables:comidas         9329,20
+    activos:mp:wallet               -9329,20

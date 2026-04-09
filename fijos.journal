@@ -74,6 +74,9 @@ D 1.000,00 ARS
 	(gastos:fijos:impuestos:Municipal)  10000
 	(activos:mp:wallet)  -10000
 ;  ---fijos imputables a AxionaLab---
+~ monthly from 2026-04-10  ; Monotributo
+	(gastos:empresa:axiona:fijos)  17000,00
+	(activos:mp:wallet)	     -17000,00
 ~ monthly from 2026-04-10  ; Odoo
 	(gastos:empresa:axiona:fijos)  19652,00
 	(pasivos:tarjeta:visa)	       -19652,00
@@ -87,4 +90,3 @@ D 1.000,00 ARS
 ~ monthly from 2026-04-10  ; musica, almacenamiento nube
 	(gastos:fijos:utilidades)  8000,00
 	(pasivos:tarjeta:visa)	     -8000,00
-
