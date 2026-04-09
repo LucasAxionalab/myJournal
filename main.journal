@@ -6,33 +6,21 @@ include deudas.journal
 D 1.000,00 ARS
 
 2026-04-02 Saldo apertura
-    activos:banco:ca58                  0
-    patrimonio:neto:apertura            0
     activos:banco:caUSD53          USD 0,24
-    patrimonio:neto:apertura        USD -0,24
     activos:mp:wallet		  80989,76      
-    patrimonio:neto:apertura	    -80989,76
     pasivos:mp:P1	          -1017787,65 ; Préstamo pesonal
-    patrimonio:neto:apertura         1017787,65
     pasivos:mp:P2          	  -297749,70 ; Préstamo cuota Vinculat
-    patrimonio:neto:apertura         297749,70
     pasivos:prestamo:jimena      -1200000 ; Préstamo de Jimena
-    patrimonio:neto:apertura        1200000
     pasivos:tarjetas:visa	  USD -5,99
-    patrimonio:neto:apertura	    USD 5,99
     pasivos:tarjetas:visa         -202294,49
-    patrimonio:neto:apertura        202294,49
     pasivos:tarjetas:master	  -263478,14
-    patrimonio:neto:apertura	    263478,14
+    patrimonio:neto:apertura	  
     
-
 2026-04-02 movimientos del dia    
     activos:empresa:axiona 	2000000
     ingresos:clientes:itiers	  -2000000     
     activos:banco:ca19		2000000
     activos:empresa:axiona	  -2000000
-    activos:mp:wallet		1430705,51
-    activos:banco:ca19		  -1430705,51
     pasivos:tarjetas:visa       178736,85
     activos:banco:ca19            -178736,85
     pasivos:tarjetas:visa       23557,64
@@ -56,7 +44,7 @@ D 1.000,00 ARS
 
 2026-04-04 Pago Debin
     activos:mp:wallet      1430730,00
-    activos:banco:ca19    -1430730,00
+    activos:banco:ca19      -1430730,00
 
 2026-04-04 Cooperativa Eléctrica de Godoy Cruz
     activos:mp:wallet                -47300,00
