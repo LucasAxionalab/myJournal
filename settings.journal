@@ -6,5 +6,7 @@ account  activos:empresa  ;  type:A
 account  activos:banco:ca19  ;  type:C
 account  activos:mp:wallet  ;  type:C
 account  pasivos  ;  type:L
+account  patrimonio:fluctuacion  ;  type:V
 
 commodity  1.000,00 ARS
+commodity  1.000,00 USD

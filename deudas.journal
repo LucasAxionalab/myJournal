@@ -15,7 +15,10 @@ D 1.000,00 ARS
 ~ monthly from 2026-04-10 to 2027-03-10  ; Prestamo cuota Vinculat
         (gastos:variables:prestamo)   33083,30
         (activos:mp:wallet)   	        -33083,30
-~ monthly from 2026-04-10 to 2027-03-10  ; Gastos estimados de super, almacén y otros
-        (gastos:variables:super)   300000,00
-        (activos:mp:wallet)          -300000,00
+~ monthly from 2026-04-10 to 2027-12-10  ; Compra SSD y carcasa
+        (gastos:variables:insumos)   32249,15
+        (activos:mp:wallet)   	        -32249,15		
+~ monthly from 2026-05-10 to 2027-03-10  ; Gastos estimados de super, almacén y otros
+        (gastos:variables:super)   270000,00
+        (activos:mp:wallet)          -270000,00
 
