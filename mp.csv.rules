@@ -7,6 +7,7 @@ fields date, _, _, _, _, _, description, _, amount, _, _, _, _, _, _, _,
 date-format %Y-%m-%dT%H:%M:%S%Q%z
 
 account1 activos:mp:wallet
+account2 gastos:desconocidos
 
 if
 Pago Debin

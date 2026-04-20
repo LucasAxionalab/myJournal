@@ -5,6 +5,7 @@ fields date, description, amount-out, amount-in, _
 date-format %m/%d/%y
 
 account1 activos:banco:ca19
+account2 gastos:desconocidos
 
 if 
 TRANSF.HABERES
@@ -37,7 +38,4 @@ if SEG. HOGAR
 
 if SAN CRISTO
    account2 gastos:fijos:seguros:Automotor
-
-;if SAN CRISTO
-;   account2 gastos:fijos:seguros:hogar
 

@@ -6,12 +6,12 @@ include deudas.journal
 D 1.000,00 ARS
 
 2026-04-02 Saldo apertura
-    activos:banco:caUSD53          USD 0,24
+    activos:banco:caUSD53          0,24 USD
     activos:mp:wallet		  80989,76      
-    pasivos:mp:P1	          -1017787,65 ; Préstamo pesonal
-    pasivos:mp:P2          	  -297749,70 ; Préstamo cuota Vinculat
+    pasivos:mp:prestamos	   -1017787,65 ; Préstamo pesonal
+    pasivos:mp:prestamos           -297749,70 ; Préstamo cuota Vinculat
     pasivos:prestamo:jimena      -1200000 ; Préstamo de Jimena
-    pasivos:tarjetas:visa	  USD -5,99
+    pasivos:tarjetas:visa	   -5,99 USD
     pasivos:tarjetas:visa         -202294,49
     pasivos:tarjetas:master	  -263478,14
     patrimonio:neto:apertura	  
@@ -91,3 +91,60 @@ D 1.000,00 ARS
 2026-04-07 Alimentos
     gastos:variables:comidas         9329,20
     activos:mp:wallet               -9329,20
+
+2026-04-09 PAGO MASTERCARD $
+    activos:banco:ca19            -66143,09
+    pasivos:tarjetas:master        66143,09
+
+2026-04-09 PAGO MASTERCARD $
+    activos:banco:ca19            -74577,31
+    pasivos:tarjetas:master        74577,31
+
+2026-04-08 "Intereses ganados"
+    activos:mp:wallet          747,29
+    income:unknown            -747,29
+
+2026-04-09 "Intereses ganados"
+    activos:mp:wallet          728,69
+    income:unknown            -728,69
+
+2026-04-09 "Compra en Carrefour - Suc, 6029"
+    activos:mp:wallet             -5662,78
+    gastos:variables:super         5662,78
+
+2026-04-09 "Varios"
+    activos:mp:wallet       -11000,00
+    expenses:unknown         11000,00
+
+2026-04-09 "Varios"
+    activos:mp:wallet        -7000,00
+    expenses:unknown          7000,00
+
+2026-04-09 "Compra en Carrefour - Suc, 6029"
+    activos:mp:wallet             -5091,50
+    gastos:variables:super         5091,50
+
+2026-04-10 "intereses ganados"
+    activos:mp:wallet          710,13
+    ingresos:varios           -710,13
+
+2026-04-10 "Varios"
+    activos:mp:wallet         6700,00
+    ingresos:varios           -6700,00
+
+2026-04-11 "Producto de Almacen Criollo"
+    activos:mp:wallet        -6800,00
+    gastos:desconocidos          6800,00
+
+2026-04-11 "Producto de Minimarket Los Hermanos"
+    activos:mp:wallet        -2400,00
+    gastos:desconocidos          2400,00
+
+2026-04-13 "Intereses ganados"
+    activos:mp:wallet          510,02
+    ingresos:varios            -510,02
+
+2026-04-13 "Pago de cuotas de Mercado Crédito"
+    activos:mp:wallet      -268889,98
+    pasivos:mp:prestamos    268889,98
+
